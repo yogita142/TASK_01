@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('rj.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 10vh;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.menu {
+    float: right;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.logo {
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 30px;
+    color: #3e38ed;
+    text-shadow: 2px 2px 2px black;
+}
+
+.menu li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+    margin-right: 5px;
+    justify-content: space-between;
+}
+
+.menu li a {
+    font-weight: bold;
+    font-size: 130%;
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+main h1 {
+    color: white;
+}
+
+main h2 {
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    font-size: 55px;
+}
+
+.changing:after {
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #3e38ed;
+}
+
+@keyframes changetext {
+    0% {
+        content: "Khajrana Mandir";
+    }
+
+    10% {
+        content: "Chhappan Dukan";
+    }
+
+    20% {
+        content: "Pitra parvat";
+    }
+
+    30% {
+        content: "Bada Ganpati";
+    }
+
+    40% {
+        content: "Patalpani Waterfall";
+    }
+
+    50% {
+        content: "Rajwada";
+    }
+
+    60% {
+        content: "ZOO";
+    }
+
+    70% {
+        content: "ISKCON Mandir";
+    }
+
+    80% {
+        content: "Lalbagh Palace";
+    }
+
+    90% {
+        content: "Sarafa Market";
+    }
+
+    100% {
+        content: "Annapurna Temple";
+    }
+}
+
+.pic {
+    display: block;
+    float: left;
+    width: 20%;
+    height: 150px;
+    padding: 3px;
+    border: 1px solid #3e38ed;
+    border-radius: 3px 3px 3px 3px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+.box {
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+img:hover {
+    transform: scale(1.5, 1.5);
+    transition: .4s transform;
+    border-radius: 5px;
+}
+
+.box h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: #3e38ed;
+    text-shadow: 2px 2px 3px black;
+    font-size: 40px;
+}
+
+.details {
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flexbox;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.details h1 {
+    text-align: center;
+    color: #3e38ed;
+    text-shadow: 2px 2px 3px black;
+    font-size: 40px;
+}
+
+.info {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.contact {
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flexbox;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: justify;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.contact h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #3e38ed;
+    text-shadow: 2px 2px 3px black;
+}
+
+div.contact {
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.text-gray-600 body-font relative {
+    padding-top: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.text-indigo-500leading-relaxed {
+    color: #3e38ed;
+    font-size: smaller;
+}
+
+/* footer */
+
+
+footer {
+    margin-top: 100px;
+    height: 40%;
+    background-color: #1e1c1c;
+    color: #dfdfdf;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer p,
+h2 {
+    width: auto;
+    height: auto;
+    margin: 10px 10px 0;
+}
+
+.footer .containers {
+    height: 90%;
+    width: 25%;
+}
+
+.containers input {
+    height: 10%;
+    width: 80%;
+    margin: 10px 10px 0;
+}
+
+.containers span {
+    cursor: pointer;
+    color: white;
+    margin: 10px;
+}
+
+.containers .images {
+    height: 70%;
+    width: 70%;
+    margin: 0;
+    text-align: center;
+}
+
+.containers img {
+    height: 4rem;
+    width: 4rem;
+    margin: 10px 10px 0 0px;
+}
+
+.copy {
+    margin-top: 2%;
+    background-color: #1e1c1c;
+    color: #dfdfdf;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    padding-right: 5px;
+}
+
+.icons {
+    display: flex;
+    height: 2rem;
+    width: 4rem;
+}
